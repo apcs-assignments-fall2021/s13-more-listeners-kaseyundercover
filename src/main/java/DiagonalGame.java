@@ -36,27 +36,91 @@ public class DiagonalGame {
         panel1.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                for (int i = 0; i < 500; i++) {
+                    int f = x-i;
 
+//                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) > 50) {
+//                        field1.setText("Bad!");
+//                    }
+//                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) <= 50 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 20)) {
+//                        field1.setText("Okay");
+//                    }
+//                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 20 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 10)) {
+//                        field1.setText("Okay");
+//                    }
+//                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 10 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 5)) {
+//                        field1.setText("Great");
+//                    }
+//                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 5 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 1)) {
+//                        field1.setText("Excellent");
+//                    }
+//                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) == 0) {
+//                        field1.setText("Perfect");
+//                    }
+                }
             }
 
             @Override
             public void mousePressed(MouseEvent e) {
-
+                int x = e.getX();
+                int y = e.getY();
+                for (int i = 0; i < 500; i++) {
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) > 50) {
+                        field1.setText("Bad!");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) <= 50 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 20)) {
+                        field1.setText("Okay");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 20 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 10)) {
+                        field1.setText("Okay");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 10 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 5)) {
+                        field1.setText("Great");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 5 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 1)) {
+                        field1.setText("Excellent");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) == 0) {
+                        field1.setText("Perfect");
+                    }
+                }
             }
 
             @Override
             public void mouseReleased(MouseEvent e) {
-
+                int x = e.getX();
+                int y = e.getY();
+                for (int i = 0; i < 500; i++) {
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) > 50) {
+                        field1.setText("Bad!");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) <= 50 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 20)) {
+                        field1.setText("Okay");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 20 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 10)) {
+                        field1.setText("Okay");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 10 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 5)) {
+                        field1.setText("Great");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) < 5 && (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) >= 1)) {
+                        field1.setText("Excellent");
+                    }
+                    if (Math.sqrt(Math.pow(i - x, 2)) + Math.pow(i - y, 2) == 0) {
+                        field1.setText("Perfect");
+                    }
+                }
             }
-
             @Override
             public void mouseEntered(MouseEvent e) {
-
+                field1.setText("Hi!");
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-
+                field1.setText("Bye!");
             }
         });
 
